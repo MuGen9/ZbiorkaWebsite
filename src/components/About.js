@@ -1,14 +1,14 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-function Home() {
+function About() {
     return (
-      <div className="Home">
-        <h1>Home</h1>
-        <Link to="/about">About</Link>
+      <div className="About">
+        <h1>About</h1>
+        <Link to="/">Home</Link>
       </div>
     );
   }
   
-  export default Home;
+  export default About;
   
