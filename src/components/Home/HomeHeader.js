@@ -16,6 +16,7 @@ function HomeHeader() {
                 <LinkScroll to='section3'>O nas</LinkScroll>
                 <LinkScroll spy={true} smooth={true} duration={500} to='section1'>Fundacja i organizacje</LinkScroll>
                 <LinkScroll spy={true} smooth={true} duration={500} to='section1'>Kontakt</LinkScroll>
+                <Link to='/#section1'>Tresc</Link>
             </div>
             <div className="home__header__main">
                 <h2>Zacznij pomagać!</h2>

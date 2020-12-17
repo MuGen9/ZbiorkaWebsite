@@ -13,7 +13,7 @@ function Home() {
         <HomeHeader />
         <HomeThreeColumns />
         <HomeSteps />
-        <HomeAbout id="section1" />
+        <HomeAbout />
         <HomeHelpWho id="section2" />
         <HomeContact id="section3" />
         <Link to="/about">About</Link>
