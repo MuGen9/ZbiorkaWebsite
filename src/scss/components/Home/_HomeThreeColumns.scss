@@ -1,0 +1,19 @@
+.home__columns {
+    background-color: $color-yellow;
+    display: flex;
+    padding: 20px 0;
+
+    .home__columns__tile {
+        flex-basis: 33.3333%;
+
+        .big {
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+        }
+
+        .medium {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+    }
+}

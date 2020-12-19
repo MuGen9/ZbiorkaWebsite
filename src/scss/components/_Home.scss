@@ -1,19 +1,15 @@
 @import 'Home/HomeHeader';
+@import 'Home/HomeThreeColumns';
+@import 'Home/HomeStepsHeader';
+@import 'Home/HomeStepsTiles';
+@import 'Home/HomeGiveawayButton';
 
 .home {
     h2 {
         font-size: 2rem;
     }
 
-    .home__steps {
-        height: 50vh;
-    }
-
     .home__about {
-        height: 50vh;
-    }
-
-    .home__columns {
         height: 50vh;
     }
 }

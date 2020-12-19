@@ -21,7 +21,7 @@ function HomeHeader() {
             <div className="home__header__main">
                 <h2>Zacznij pomagać!</h2>
                 <h2>Oddaj niechciane rzeczy w zaufane ręce</h2>
-                <img src={decoration}></img>
+                <img src={decoration} alt="Decoration"></img>
                 <div className="home__header__main__buttons">
                     <Link to="/logowanie">ODDAJ RZECZY</Link>
                     <Link to="/logowanie">ZORGANIZUJ ZBIÓRKĘ</Link>

@@ -1,0 +1,22 @@
+.home__steps__tiles {
+    display: flex;
+    align-items: flex-start;
+    margin: 10px 0;
+
+    .home__steps__single {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+
+        img {
+            margin-bottom: 15px;
+        }
+
+        hr {
+            width: 50%;
+            margin: 10px auto;
+            border-color: black;
+        }
+    }
+}

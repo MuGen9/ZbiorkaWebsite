@@ -1,0 +1,15 @@
+.home__giveaway__button {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+
+    a {
+        font-size: 2rem;
+        text-decoration: none;
+        color: inherit;
+        border: 1px solid black;
+        margin: 20px;
+        padding: 10px;
+        display: block;
+    }
+}
