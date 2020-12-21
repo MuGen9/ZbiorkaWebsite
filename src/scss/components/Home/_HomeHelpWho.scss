@@ -1,0 +1,23 @@
+.home__help {
+    background-color: white;
+    padding: 20px 0;
+
+    h4 {
+        font-size: 1.7rem;
+        margin: 20px 0 10px 0;
+    }
+
+    p {
+        font-size: 1.2rem;
+        padding: 0 5px;
+    }
+
+    img {
+        margin-top: 20px;
+    }
+
+    .home__help__container {
+        display: flex;
+        flex-direction: column;
+    }
+}

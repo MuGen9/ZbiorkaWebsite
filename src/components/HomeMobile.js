@@ -10,7 +10,7 @@ import HomeContact from "./Home/HomeContact";
 import HomeSingleButton from "./Home/HomeSingleButton";
 import HomeFooterMobile from "./Home/HomeFooterMobile";
 
-function Home() {
+function HomeMobile() {
     return (
       <div className="home">
         <HomeHeader />
@@ -24,5 +24,4 @@ function Home() {
     );
   }
   
-  export default Home;
-  
+  export default HomeMobile;

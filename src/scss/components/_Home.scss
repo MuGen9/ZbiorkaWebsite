@@ -2,11 +2,12 @@
 @import 'Home/HomeThreeColumns';
 @import 'Home/HomeStepsHeader';
 @import 'Home/HomeStepsTiles';
-@import 'Home/HomeGiveawayButton';
+@import 'Home/HomeSingleButton';
+@import 'Home/HomeHelpWho';
 
 .home {
     h2 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .home__about {
