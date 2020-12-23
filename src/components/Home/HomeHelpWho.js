@@ -3,7 +3,7 @@ import decoration from './../../assets/Decoration.svg';
 
 function HomeHelpWho() {
     return (
-        <div className="home__help" id="section1">
+        <div className="home__help" id="orgs">
             <h2>Komu pomagamy?</h2>
             <img src={decoration} alt="Decoration"></img>
             <div className="home__help__container container">

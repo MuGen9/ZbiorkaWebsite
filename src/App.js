@@ -14,10 +14,12 @@ function App() {
         dispatchMobile({
           type: "SET_DESKTOP"
         });
+        console.log(isMobile);
     } else {
         dispatchMobile({
-        type: "SET_MOBILE"
-      });
+          type: "SET_MOBILE"
+        });
+        console.log(isMobile);
     }
   }
 

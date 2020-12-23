@@ -11,12 +11,11 @@ function HomeHeaderTop() {
                     <Link to="/rejestracja">Załóż konto</Link>
                 </div>
                 <div className="home__header__navigation">
-                    <HashLink smooth to="/#section1">Start</HashLink>
-                    <HashLink to="/#section1">O co chodzi?</HashLink>
-                    <HashLink to="/#section1">O nas</HashLink>
-                    <HashLink to="/#section1">Fundacja i organizacje</HashLink>
-                    <HashLink to="/#section1">Kontakt</HashLink>
-                    <HashLink to="/#section1">Treść</HashLink>
+                    <HashLink smooth to="/#start">Start</HashLink>
+                    <HashLink to="/#steps">O co chodzi?</HashLink>
+                    <HashLink to="/#about">O nas</HashLink>
+                    <HashLink to="/#orgs">Fundacja i organizacje</HashLink>
+                    <HashLink to="/#contact">Kontakt</HashLink>
                 </div>
             </div>
         </div>

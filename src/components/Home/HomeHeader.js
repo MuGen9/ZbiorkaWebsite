@@ -7,7 +7,7 @@ import HomeDoubleButtons from './HomeDoubleButtons';
  
 function HomeHeader() {
     return (
-        <div className="home__header">
+        <div className="home__header" id="start">
             <div className="container" style={{display: 'flex'}}>
                 <img className="banner" src={banner} alt="Banner" />
                 <div className="home__header__main">
