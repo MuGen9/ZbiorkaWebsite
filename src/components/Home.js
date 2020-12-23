@@ -4,22 +4,26 @@ import HomeHeader from './Home/HomeHeader';
 import HomeThreeColumns from "./Home/HomeThreeColumns";
 import HomeStepsHeader from "./Home/HomeStepsHeader";
 import HomeStepsTiles from "./Home/HomeStepsTiles";
-import HomeAbout from "./Home/HomeAbout";
 import HomeHelpWho from "./Home/HomeHelpWho";
 import HomeContact from "./Home/HomeContact";
+import HomeAbout from "./Home/HomeAbout";
+import HomeFooter from "./Home/HomeFooter";
+import HomeHeaderTop from "./Home/HomeHeaderTop";
 import HomeSingleButton from "./Home/HomeSingleButton";
-import HomeFooterMobile from "./Home/HomeFooterMobile";
 
 function Home() {
     return (
       <div className="home">
+        <HomeHeaderTop />
         <HomeHeader />
         <HomeThreeColumns />
         <HomeStepsHeader />
         <HomeStepsTiles />
-        <HomeHelpWho id="section2" />
-        <HomeSingleButton content={'Załóż konto'} redirect={'/rejestracja'} />
-        <HomeFooterMobile />
+        <HomeSingleButton content={'Oddaj rzeczy'} redirect={'/logowanie'} />
+        <HomeAbout />
+        <HomeHelpWho />
+        <HomeContact />
+        <HomeFooter />
       </div>
     );
   }

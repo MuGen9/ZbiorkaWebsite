@@ -1,4 +1,6 @@
 .home__header {
+    background-color:  white;
+
     a {
         text-decoration: none;
         color: inherit;
@@ -8,9 +10,18 @@
         display: block;
     }
 
+    .banner {
+        width: 60%;
+        display: none;
+
+        @media (min-width: 920px) {
+            display: block;
+        }
+    }
+
     h2 {
-        font-size: 1.8rem;
-        margin: 20px;
+        font-size: 2rem;
+        padding: 20px;
     }
 
     img {
@@ -18,15 +29,20 @@
         margin: 0 auto;
     }
 
-    .home__header__login {
+    .home__header__login, .home__header__navigation {
         display: flex;
-    }
-
-    .home__header__navigation {
-        display: flex;
+        justify-content: flex-end;
     }
 
     .home__header__main__buttons {
         display: flex;
     }
+}
+
+.home__header__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }

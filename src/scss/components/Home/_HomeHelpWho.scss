@@ -1,6 +1,10 @@
 .home__help {
     background-color: white;
-    padding: 20px 0;
+    padding: 40px 0 50px 0;
+
+    h2 {
+        font-size: 2rem;
+    }
 
     h4 {
         font-size: 1.7rem;
@@ -19,5 +23,9 @@
     .home__help__container {
         display: flex;
         flex-direction: column;
+
+        @media (min-width: 800px) {
+            flex-direction: row;
+        }
     }
 }

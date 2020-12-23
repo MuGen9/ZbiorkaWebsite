@@ -6,10 +6,19 @@
 body {
     font-family: $font-base;
     background-color: $color-white;
-    position: absolute;
     text-align: center;
 }
 
 html {
     scroll-behavior: smooth;
+}
+
+.hidden {
+    display: none;
+}
+
+.container {
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
 }

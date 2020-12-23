@@ -1,5 +1,5 @@
 export const initialState = {
-    mobile: null
+    isMobile: null
 }
 
 const reducer = (state, action) => {
@@ -8,8 +8,11 @@ const reducer = (state, action) => {
     switch(action.type) {
         case "SET_MOBILE":
             return {
-                ...state,
-                mobile: action.mobile,
+                isMobile: true,
+            };
+        case "SET_DESKTOP":
+            return {
+                isMobile: false
             };
 
         default:

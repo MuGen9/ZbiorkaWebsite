@@ -2,15 +2,8 @@
 @import 'Home/HomeThreeColumns';
 @import 'Home/HomeStepsHeader';
 @import 'Home/HomeStepsTiles';
-@import 'Home/HomeSingleButton';
+@import 'Home/HomeButtons';
 @import 'Home/HomeHelpWho';
-
-.home {
-    h2 {
-        font-size: 2.5rem;
-    }
-
-    .home__about {
-        height: 50vh;
-    }
-}
+@import 'Home/HomeAbout';
+@import 'Home/HomeContact';
+@import 'Home/HomeFooter';

@@ -1,0 +1,33 @@
+.home__about {
+    display: flex;
+
+    .home__about__text {
+        h2 {
+            font-size: 2rem;
+            margin-top: 30px;
+        }
+
+        p {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        img {
+            margin: 10px 0 25px 0;
+        }
+
+        .home__about__signature {
+            width: 40%;
+            display: block;
+            margin: 20px 15px 20px auto;
+
+            @media (min-width: 1080px) {
+                width: 30%;
+            }
+        }
+    }
+
+    .home__about__people {
+        width: 50%;
+    }
+}

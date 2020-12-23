@@ -1,0 +1,16 @@
+.home__contact {
+    display: flex;
+    justify-content: flex-end;
+    background-image: url(../../../assets/Background-Contact-Form.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .home__contact__text {
+        width: 45%;
+    }
+}

@@ -3,10 +3,10 @@ import decoration from './../../assets/Decoration.svg';
 
 function HomeHelpWho() {
     return (
-        <div className="home__help">
+        <div className="home__help" id="section1">
             <h2>Komu pomagamy?</h2>
             <img src={decoration} alt="Decoration"></img>
-            <div className="home__help__container">
+            <div className="home__help__container container">
                 <div className="home__help__tile">
                     <h4>Fundacjom</h4>
                     <p>W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.</p>

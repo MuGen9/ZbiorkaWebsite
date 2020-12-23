@@ -1,9 +1,13 @@
 import React from 'react';
+import decoration from './../../assets/Decoration.svg';
 
 function HomeContact() {
     return (
-        <div>
-            <h2>Home Contact</h2>
+        <div className="home__contact">
+            <div className="home__contact__text">
+                <h2>Skontaktuj się z nami</h2>
+                <img src={decoration} alt="Decoration" />
+            </div>
         </div>
     )
 }

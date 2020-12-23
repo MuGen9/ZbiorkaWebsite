@@ -1,7 +1,10 @@
 .home__columns {
     background-color: $color-yellow;
-    display: flex;
     padding: 20px 0;
+
+    .container {
+        display: flex;
+    }
 
     .home__columns__tile {
         padding: 0 5px;
