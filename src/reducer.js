@@ -2,13 +2,14 @@ export const initialState = {
     isMobile: null
 }
 
+
 const reducer = (state, action) => {
     console.log(action);
 
     switch(action.type) {
         case "SET_MOBILE":
             return {
-                isMobile: true,
+                isMobile: true
             };
         case "SET_DESKTOP":
             return {

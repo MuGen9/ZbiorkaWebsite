@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useContext} from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import HomeHeader from './Home/HomeHeader';
 import HomeThreeColumns from "./Home/HomeThreeColumns";
@@ -10,11 +10,15 @@ import HomeAbout from "./Home/HomeAbout";
 import HomeFooter from "./Home/HomeFooter";
 import HomeHeaderTop from "./Home/HomeHeaderTop";
 import HomeSingleButton from "./Home/HomeSingleButton";
+import {ViewContext} from "./../App";
+
 
 function Home() {
+    const {state: {isMobile}} = useContext(ViewContext);
+    
     return (
       <div className="home">
-        <HomeHeaderTop />
+        {isMobile === false ? <HomeHeaderTop /> : <p>Mobile</p>}
         <HomeHeader />
         <HomeThreeColumns />
         <HomeStepsHeader />
@@ -22,8 +26,7 @@ function Home() {
         <HomeSingleButton content={'Oddaj rzeczy'} redirect={'/logowanie'} />
         <HomeAbout />
         <HomeHelpWho />
-        <HomeContact />
-        <HomeFooter />
+        {!isMobile && <><HomeContact /><HomeFooter /></>}
       </div>
     );
   }

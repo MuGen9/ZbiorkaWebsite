@@ -1,9 +1,12 @@
-import React, { useEffect, useReducer } from 'react';
+import React, { useEffect, useReducer, createContext } from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from './components/Home';
 import HomeMobile from './components/HomeMobile';
 import About from './components/About';
 import reducer, {initialState} from './reducer';
+
+export const ViewContext = createContext();
+export const UserContext = createContext();
 
 function App() {
   const [isMobile, dispatchMobile] = useReducer(reducer, initialState);
@@ -14,12 +17,10 @@ function App() {
         dispatchMobile({
           type: "SET_DESKTOP"
         });
-        console.log(isMobile);
     } else {
         dispatchMobile({
           type: "SET_MOBILE"
         });
-        console.log(isMobile);
     }
   }
 
@@ -48,19 +49,27 @@ function App() {
   const links = [
     { title: "", url: ""},
   ]
+  console.log(isMobile);
+
+  
+  // const homeView = isMobile ? <HomeMobile items={links}/> : <Home items={links}/>;
 
   return (
-    <Router>
-      <Switch>
-        <Route exact path="/" >
-          {/* {isMobile ? <HomeMobile items={links}/> : <Home items={links}/>} */}
-          <Home items={links}/>
-        </Route>
-        <Route path="/about" >
-          <About/>
-        </Route>
-      </Switch>
-    </Router>
+    <UserContext.Provider value={{user: null}}>
+      <ViewContext.Provider value={ {state: isMobile, dispatchMobile} }>
+        <Router>
+          <Switch>
+            <Route exact path="/" >
+            
+              <Home items={links}/>
+            </Route>
+            <Route path="/about" >
+              <About/>
+            </Route>
+          </Switch>
+        </Router>
+      </ViewContext.Provider>
+    </UserContext.Provider>
   );
 }
 
