@@ -30,4 +30,12 @@
     .home__about__people {
         width: 50%;
     }
+
+    @media (max-width: 700px) {
+        flex-direction: column;
+
+        .home__about__people {
+            width: 100%;
+        }
+    }
 }

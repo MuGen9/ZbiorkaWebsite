@@ -7,6 +7,7 @@ function HomeHeaderTop() {
         <div className="home__header ">
             <div className="container">
                 <div className="home__header__login">
+                    <Link to="/wylogowano">Wyloguj</Link>
                     <Link to="/logowanie">Zaloguj</Link>
                     <Link to="/rejestracja">Załóż konto</Link>
                 </div>

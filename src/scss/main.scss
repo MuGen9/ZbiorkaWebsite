@@ -2,6 +2,8 @@
 @import 'settings/fonts';
 @import 'settings/reset';
 @import 'components/Home';
+@import 'components/LogIn';
+@import 'components/Register';
 
 body {
     font-family: $font-base;
@@ -21,4 +23,11 @@ html {
     max-width: 1250px;
     margin-left: auto;
     margin-right: auto;
+}
+
+@media (max-width: 650px) {
+    body {
+        position: absolute;
+        width: 100%;
+    }
 }

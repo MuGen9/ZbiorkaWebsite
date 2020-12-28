@@ -1,0 +1,96 @@
+.login__main {
+    background-color: white;
+    padding: 50px 0 50px 0;
+    font-size: 1.3rem;
+
+    h3 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .login__form {
+        background-color: $color-white;
+        width: 35%;
+        margin: 20px auto 0 auto;
+        padding: 25px 0 25px 0;
+
+        label {
+            display: block;
+            margin: 20px 0;
+        }
+
+        input {
+            margin-top: 10px;
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid black;
+            width: 70%;
+            text-align: center;
+        }
+
+        @media (max-width: 1350px) {
+            width: 50%;
+        }
+
+        @media (max-width: 900px) {
+            width: 80%;
+        }
+
+        @media (max-width: 520px) {
+            width: 100%;
+        }
+    }
+
+    .login__buttons {
+        display: flex;
+        justify-content: center;
+        margin: 30px 100px 40px 100px;
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            border: 1px solid transparent;
+            margin: 30px;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-size: 1.7rem;
+
+            @media (max-width: 400px) {
+                font-size: 1.3rem;
+            }
+        }
+    
+        a:hover {
+            border: 1px solid black;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .login__decoration {
+            width: 40%;
+            height: auto;
+        }
+
+        .login__buttons {
+            margin: 40px 0;
+
+            a {
+                margin: 10px;
+            }
+        }
+    }
+
+    @media (max-width: 400px) {
+        font-size: 1rem;
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        .login__decoration {
+            width: 60%;
+        }
+    }
+}

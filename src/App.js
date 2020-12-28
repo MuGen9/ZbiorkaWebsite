@@ -1,8 +1,9 @@
 import React, { useEffect, useReducer, createContext } from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from './components/Home';
-import HomeMobile from './components/HomeMobile';
-import About from './components/About';
+import LogIn from './components/LogIn';
+import Register from './components/Register';
+import LogOut from './components/LogOut';
 import reducer, {initialState} from './reducer';
 
 export const ViewContext = createContext();
@@ -25,7 +26,7 @@ function App() {
   }
 
 
-  const updateMediaQuery= (match) =>{
+  const updateMediaQuery = (match) => {
     if(match.matches){
       updateViewPortData();
     }else{
@@ -60,11 +61,16 @@ function App() {
         <Router>
           <Switch>
             <Route exact path="/" >
-            
-              <Home items={links}/>
+              <Home items={links} />
             </Route>
-            <Route path="/about" >
-              <About/>
+            <Route path="/logowanie" >
+              <LogIn />
+            </Route>
+            <Route path="/rejestracja" >
+              <Register />
+            </Route>
+            <Route path="/wylogowano" >
+              <LogOut />
             </Route>
           </Switch>
         </Router>

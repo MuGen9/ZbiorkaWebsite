@@ -1,7 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import decoration from './../../assets/Decoration.svg';
-import { HashLink } from 'react-router-hash-link';
 import banner from './../../assets/Home-Hero-Image.jpg';
 import HomeDoubleButtons from './HomeDoubleButtons';
  

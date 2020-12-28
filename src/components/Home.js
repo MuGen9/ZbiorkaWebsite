@@ -1,5 +1,5 @@
 import React, {useContext} from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+// import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import HomeHeader from './Home/HomeHeader';
 import HomeThreeColumns from "./Home/HomeThreeColumns";
 import HomeStepsHeader from "./Home/HomeStepsHeader";
@@ -10,15 +10,18 @@ import HomeAbout from "./Home/HomeAbout";
 import HomeFooter from "./Home/HomeFooter";
 import HomeHeaderTop from "./Home/HomeHeaderTop";
 import HomeSingleButton from "./Home/HomeSingleButton";
+import HomeFooterMobile from "./Home/HomeFooterMobile";
 import {ViewContext} from "./../App";
 
 
 function Home() {
-    const {state: {isMobile}} = useContext(ViewContext);
-    
-    return (
-      <div className="home">
-        {isMobile === false ? <HomeHeaderTop /> : <p>Mobile</p>}
+    const {state: {isMobile, loggedIn}} = useContext(ViewContext);
+
+    console.log(loggedIn);
+
+    const desktopJSX = (
+      <>
+        <HomeHeaderTop />
         <HomeHeader />
         <HomeThreeColumns />
         <HomeStepsHeader />
@@ -26,7 +29,26 @@ function Home() {
         <HomeSingleButton content={'Oddaj rzeczy'} redirect={'/logowanie'} />
         <HomeAbout />
         <HomeHelpWho />
-        {!isMobile && <><HomeContact /><HomeFooter /></>}
+        <HomeContact />
+        <HomeFooter />
+      </>
+    )
+
+    const mobileJSX = (
+      <>
+        <HomeHeader />
+        <HomeThreeColumns />
+        <HomeStepsHeader />
+        <HomeStepsTiles />
+        <HomeHelpWho />
+        <HomeSingleButton content={'Załóż konto'} redirect={'/rejestracja'} />
+        <HomeFooterMobile />
+      </>
+    )
+    
+    return (
+      <div className="home">
+        { isMobile ? mobileJSX : desktopJSX }
       </div>
     );
   }

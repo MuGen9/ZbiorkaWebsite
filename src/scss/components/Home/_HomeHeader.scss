@@ -4,10 +4,16 @@
     a {
         text-decoration: none;
         color: inherit;
-        border: 1px solid black;
+        border: 1px solid transparent;
         margin: 10px;
         padding: 5px;
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    a:hover {
+        border: 1px solid black;
     }
 
     .banner {
@@ -32,6 +38,7 @@
     .home__header__login, .home__header__navigation {
         display: flex;
         justify-content: flex-end;
+        flex-wrap: wrap;
     }
 
     .home__header__main__buttons {
