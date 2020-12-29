@@ -15,9 +15,7 @@ import {ViewContext} from "./../App";
 
 
 function Home() {
-    const {state: {isMobile, loggedIn}} = useContext(ViewContext);
-
-    console.log(loggedIn);
+    const {state: {isMobile}} = useContext(ViewContext);
 
     const desktopJSX = (
       <>

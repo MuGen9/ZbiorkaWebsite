@@ -45,7 +45,7 @@ function App() {
     match.addListener(updateMediaQuery)
     console.log(window.screen.width);
     console.log(isMobile);
-  }, []);
+  });
 
   const links = [
     { title: "", url: ""},
