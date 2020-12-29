@@ -4,7 +4,7 @@ import Pagination from './Pagination';
 function Foundation() {
     return (
         <>
-            <p>W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.</p>
+            <h4>W naszej bazie znajdziesz listę zweryfikowanych Fundacji, <br/>z którymi współpracujemy. Możesz sprawdzić czym się zajmują,<br/> komu pomagają i czego potrzebują.</h4>
             <Pagination />
         </>
     )

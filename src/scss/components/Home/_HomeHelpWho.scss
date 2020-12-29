@@ -6,7 +6,7 @@
         font-size: 2rem;
     }
 
-    h4 {
+    h3 {
         font-size: 1.3rem;
         margin: 20px 0 10px 0;
         border: 1px solid transparent;
@@ -14,10 +14,18 @@
         transition: all 0.3s ease;
     }
 
-    h4:hover {
+    h3:hover {
         cursor: pointer;
         border: 1px solid black;
         transform: scale(1.05);
+    }
+
+    h3.active {
+        border: 1px solid black;
+    }
+
+    h4 {
+        margin: 20px;
     }
 
     p {
