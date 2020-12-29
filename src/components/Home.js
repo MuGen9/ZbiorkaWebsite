@@ -10,7 +10,7 @@ import HomeAbout from "./Home/HomeAbout";
 import HomeFooter from "./Home/HomeFooter";
 import HomeHeaderTop from "./Home/HomeHeaderTop";
 import HomeSingleButton from "./Home/HomeSingleButton";
-import HomeFooterMobile from "./Home/HomeFooterMobile";
+// import HomeFooterMobile from "./Home/HomeFooterMobile";
 import {ViewContext} from "./../App";
 
 
@@ -40,7 +40,7 @@ function Home() {
         <HomeStepsTiles />
         <HomeHelpWho />
         <HomeSingleButton content={'Załóż konto'} redirect={'/rejestracja'} />
-        <HomeFooterMobile />
+        <HomeFooter />
       </>
     )
     

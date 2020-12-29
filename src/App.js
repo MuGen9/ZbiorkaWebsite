@@ -25,35 +25,23 @@ function App() {
     }
   }
 
-
-  const updateMediaQuery = (match) => {
-    if(match.matches){
-      updateViewPortData();
-    }else{
-      updateViewPortData();
-    }
-    return match;
-  }
-
   useEffect(() => {
-    // updateViewPortData();
-    // window.addEventListener("resize", updateViewPortData);
-    // return () => window.removeEventListener("resize", updateViewPortData);
+    const updateMediaQuery = (match) => {
+      updateViewPortData();
+      return match;
+    }
+
     const match = window.matchMedia("(min-width: 650px)");
     console.log(match);
     updateMediaQuery(match);
     match.addListener(updateMediaQuery)
     console.log(window.screen.width);
-    console.log(isMobile);
-  });
+  }, []);
 
   const links = [
     { title: "", url: ""},
   ]
   console.log(isMobile);
-
-  
-  // const homeView = isMobile ? <HomeMobile items={links}/> : <Home items={links}/>;
 
   return (
     <UserContext.Provider value={{user: null}}>
