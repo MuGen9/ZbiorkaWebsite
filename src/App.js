@@ -32,16 +32,13 @@ function App() {
     }
 
     const match = window.matchMedia("(min-width: 650px)");
-    console.log(match);
     updateMediaQuery(match);
-    match.addListener(updateMediaQuery)
-    console.log(window.screen.width);
+    match.addListener(updateMediaQuery);
   }, []);
 
   const links = [
     { title: "", url: ""},
   ]
-  console.log(isMobile);
 
   return (
     <UserContext.Provider value={{user: null}}>
