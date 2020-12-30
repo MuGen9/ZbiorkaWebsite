@@ -1,6 +1,6 @@
 .home__help {
     background-color: white;
-    padding: 40px 0 50px 0;
+    padding: 40px 0 20px 0;
 
     h2 {
         font-size: 2rem;
@@ -41,5 +41,49 @@
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
+    }
+
+    .home__help__tile {
+        display: flex;
+        width: 80%;
+        margin: 10px auto;
+        justify-content: space-between;
+        border-bottom: 1px solid grey;
+
+        h5 {
+            font-size: 1.5rem;
+            margin: 10px;
+        }
+
+        h6 {
+            margin: 10px;
+        }
+
+        &--left {
+            text-align: left;
+        }
+
+        &--right {
+            text-align: right;
+        }
+    }
+
+    .pagination {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+
+        .pagination__tile {
+            font-size: 1.5rem;
+            border: 1px solid black;
+            padding: 10px 15px;
+            margin: 5px 15px;
+            transition: all 0.3s ease;
+
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.05);
+            }
+        }
     }
 }
