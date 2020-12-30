@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Pagination({perPage, items, parentCallback}) {
-    const number = Math.ceil(items.length/perPage);
+    const number = Math.ceil(items/perPage);
     const pages = Array.from({length: number}, (_, i) => i + 1);
 
     return (

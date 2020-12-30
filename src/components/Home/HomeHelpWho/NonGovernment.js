@@ -33,7 +33,7 @@ function NonGovernment() {
                     </div>
                 </div>
             ))}
-            <Pagination perPage={3} items={orgs} parentCallback={handleCallback} />
+            <Pagination perPage={3} items={orgs.length} parentCallback={handleCallback} />
         </>
     )
 }

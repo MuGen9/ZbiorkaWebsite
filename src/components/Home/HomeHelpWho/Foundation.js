@@ -36,7 +36,7 @@ function Foundation() {
                     </div>
                 </div>
             ))}
-            <Pagination perPage={3} items={foundations} parentCallback={handleCallback} />
+            <Pagination perPage={3} items={foundations.length} parentCallback={handleCallback} />
         </>
     )
 }

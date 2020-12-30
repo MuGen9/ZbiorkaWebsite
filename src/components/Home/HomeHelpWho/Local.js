@@ -30,7 +30,7 @@ function Local() {
                     </div>
                 </div>
             ))}
-            <Pagination perPage={3} items={locals} parentCallback={handleCallback} />
+            <Pagination perPage={3} items={locals.length} parentCallback={handleCallback} />
         </>
     )
 }
