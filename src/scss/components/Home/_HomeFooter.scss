@@ -1,5 +1,31 @@
 .home__footer {
+    position: relative;
+
     p {
-        margin: 10px 0 10px 0;
+        margin: 12px 0 10px 0;
+    }
+
+    .home__footer__icons {
+        position: absolute;
+        right: 20px;
+        top: -8px;
+
+        img {
+            margin: 0px 10px 5px 10px;
+        }
+
+        img:hover {
+            cursor: pointer;
+        }
+    }
+
+    @media (max-width: 480px) {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        .home__footer__icons {
+            position: static;
+        }
     }
 }

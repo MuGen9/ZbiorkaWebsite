@@ -2,6 +2,10 @@
     display: flex;
 
     .home__about__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
         h2 {
             font-size: 2rem;
             margin-top: 30px;
