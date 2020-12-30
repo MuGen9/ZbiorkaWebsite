@@ -21,4 +21,8 @@
     a:hover {
         transform: scale(1.05);
     }
+
+    @media (max-width: 400px) {
+        flex-direction: column;
+    }
 }

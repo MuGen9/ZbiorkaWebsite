@@ -40,7 +40,10 @@
     .home__help__header {
         display: flex;
         justify-content: space-evenly;
-        flex-wrap: wrap;
+        
+        @media (max-width: 650px) {
+            flex-direction: column;
+        }
     }
 
     .home__help__tile {
