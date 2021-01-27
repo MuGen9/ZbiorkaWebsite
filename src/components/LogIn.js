@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import HomeHeaderTop from './Home/HomeHeaderTop';
 import decoration from './../assets/Decoration.svg';
 import { Link, useHistory } from 'react-router-dom';
+import { Validator } from '../services/Validator';
 
 function LogIn() {
     const [form, setForm] = useState({ email: "", password: "" });
@@ -31,9 +32,10 @@ function LogIn() {
     }
 
     const validateEmail = () => {
-        const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        let valid = re.test(String(form.email).toLowerCase());
-
+        // const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        // let valid = re.test(String(form.email).toLowerCase());
+        let valid = Validator.checkEmail(form.email);
+        
         setErrors(prevState => ({
             ...prevState,
             emailError: valid ? "" : "Nieprawidłowy email"

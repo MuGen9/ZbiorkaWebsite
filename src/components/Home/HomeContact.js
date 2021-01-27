@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { ContactService } from '../../services/ContactService';
 import decoration from './../../assets/Decoration.svg';
 
 function HomeContact() {
@@ -35,19 +36,24 @@ function HomeContact() {
     }
 
     const sendForm = () => {
-        const APIurl = 'https://fer-api.coderslab.pl/v1/portfolio/contact'
-        const requestOptions = {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(form)
-        };
+        
+        ContactService.send(form.name, form.email, form.message, (response) => {
+            setSuccess(true);
+        });
+        
+        // const APIurl = 'https://fer-api.coderslab.pl/v1/portfolio/contact'
+        // const requestOptions = {
+        //     method: 'POST',
+        //     headers: { 'Content-Type': 'application/json' },
+        //     body: JSON.stringify(form)
+        // };
 
-        fetch(APIurl, requestOptions)
-            .then(response => {
-                setSuccess(true);
-                console.log(response);
-            })
-            .catch(error => console.log('Error:', error));
+        // fetch(APIurl, requestOptions)
+        //     .then(response => {
+        //         setSuccess(true);
+        //         console.log(response);
+        //     })
+        //     .catch(error => console.log('Error:', error));
     }
 
     const validateName = () => {
