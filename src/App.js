@@ -43,7 +43,7 @@ function App() {
   return (
     <UserContext.Provider value={{user: null}}>
       <ViewContext.Provider value={ {state: isMobile, dispatchMobile} }>
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
           <Switch>
             <Route exact path="/" >
               <Home items={links} />
