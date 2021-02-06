@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+# About this project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Portfolio project made by Maks Paradowski. Design by UX course student, Magda from Coders Lab.
+Demo: [https://mugen9.github.io/ZbiorkaWebsite/](https://mugen9.github.io/ZbiorkaWebsite/)
 
 ## Available Scripts
 
