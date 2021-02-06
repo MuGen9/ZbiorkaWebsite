@@ -1,6 +1,6 @@
 # About this project
 
-Portfolio project made by Maks Paradowski. Design by UX course student, Magda from Coders Lab.
+Portfolio project made by Maks Paradowski. Design by UX course student, Magda from Coders Lab.\
 Demo: [https://mugen9.github.io/ZbiorkaWebsite/](https://mugen9.github.io/ZbiorkaWebsite/)
 
 ## Available Scripts
