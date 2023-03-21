@@ -3,6 +3,9 @@
 Portfolio project made by Maks Paradowski. Design by UX course student, Magda from Coders Lab.\
 Demo: [https://mugen9.github.io/ZbiorkaWebsite/](https://mugen9.github.io/ZbiorkaWebsite/)
 
+## Screenshots:
+![Landing page](/src/assets/ZbiorkaWebsiteScreenShot.png?raw=true "Optional Title")
+
 ## Available Scripts
 
 In the project directory, you can run:
