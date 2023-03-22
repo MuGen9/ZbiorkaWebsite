@@ -7,7 +7,7 @@ Live Demo: [https://mugen9.github.io/ZbiorkaWebsite/](https://mugen9.github.io/Z
 ## Screenshots:
 ![Landing page](/src/assets/ZbiorkaWebsiteScreenShot.png?raw=true "Landing page")
 
-Design by UX course student, Magda from Coders Lab.\
+Design by UX course student, Magda from Coders Lab.
 
 ## Available Scripts
 
