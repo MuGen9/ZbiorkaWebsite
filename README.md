@@ -1,11 +1,13 @@
 # About this project
 
-Portfolio project made by Maks Paradowski. Design by UX course student, Magda from Coders Lab.\
+Portfolio project made by Maks Paradowski.\
 Developed using React, Context, Router and Sass.\
 Live Demo: [https://mugen9.github.io/ZbiorkaWebsite/](https://mugen9.github.io/ZbiorkaWebsite/)
 
 ## Screenshots:
 ![Landing page](/src/assets/ZbiorkaWebsiteScreenShot.png?raw=true "Landing page")
+
+Design by UX course student, Magda from Coders Lab.\
 
 ## Available Scripts
 
